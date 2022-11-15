@@ -14,6 +14,15 @@ public class GrassType extends Monster {
     super(name, "grass", "water", "fire", hp, base);
     atk = base;
     def = base;
-  
   }
+  
+  public void rest() {
+      hp += maxHP*0.5;
+  }
+  
+  @Override
+    public void special() {
+        hp += maxHP*0.2;
+  }
+  
 }
