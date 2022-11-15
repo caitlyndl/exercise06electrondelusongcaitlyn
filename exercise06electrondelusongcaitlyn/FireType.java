@@ -16,4 +16,10 @@ public class FireType extends Monster {
     def *= 0.7;
   }
   
+  @Override
+    public void special() {
+        atk += 2;
+        hp -= maxHP*0.1;
+    }
+  
 }
